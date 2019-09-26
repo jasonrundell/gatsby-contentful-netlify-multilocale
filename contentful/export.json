@@ -306,8 +306,8 @@
           "fr-CA": "Accueil"
         },
         "slug": {
-          "en-CA": "/ca",
-          "fr-CA": "/fr-ca"
+          "en-CA": "/en-CA",
+          "fr-CA": "/fr-CA"
         },
         "heroImage": {
           "en-CA": {
