@@ -237,6 +237,7 @@ Use your preferred method of creating a branch off of your `master`, but here is
 ```bash
 git checkout master
 git branch develop
+git checkout develop
 git push origin develop
 ```
 
