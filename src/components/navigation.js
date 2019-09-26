@@ -28,27 +28,13 @@ export default () => (
         </ul>
         <ul className={styles.langNavigation}>
           <li className={styles.navigationItem}>
-            <Link to="/ca/">English</Link>
+            <Link to="/en-CA/">English</Link>
           </li>
           <li className={styles.navigationItem}>
-            <Link to="/fr-ca/">French</Link>
+            <Link to="/fr-CA/">French</Link>
           </li>
         </ul>
       </nav>
     )}
   />
 )
-
-/**
- * query Navigation {
-        allContentfulPage(sort: { fields: [title], order: ASC }) {
-          edges {
-            node {
-              title
-              slug
-              publishDate
-            }
-          }
-        }
-      }
- */
