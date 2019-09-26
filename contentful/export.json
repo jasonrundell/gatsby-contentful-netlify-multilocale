@@ -1,0 +1,1190 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "page",
+        "type": "ContentType",
+        "createdAt": "2019-09-24T02:13:01.065Z",
+        "updatedAt": "2019-09-24T14:53:26.343Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2019-09-24T14:53:26.343Z",
+        "firstPublishedAt": "2019-09-24T02:13:01.211Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 8,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Page",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "heroImage",
+          "name": "Hero Image",
+          "type": "Link",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "Text",
+          "localized": true,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "publishDate",
+          "name": "Publish Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tags",
+          "name": "Tags",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+              {
+                "in": ["general", "javascript", "static-sites"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "qom3enaifvoq",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 19,
+        "createdAt": "2019-09-24T02:13:01.367Z",
+        "createdBy": {
+          "sys": {
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2019-09-24T20:31:17.653Z",
+        "updatedBy": {
+          "sys": {
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "page",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "sidebar": [
+        {
+          "widgetId": "publication-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "content-preview-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "netlify-app-zgi29N4OnlHJXiE7",
+          "widgetNamespace": "extension"
+        },
+        {
+          "widgetId": "incoming-links-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "translation-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "versions-widget",
+          "widgetNamespace": "sidebar-builtin"
+        },
+        {
+          "widgetId": "users-widget",
+          "widgetNamespace": "sidebar-builtin"
+        }
+      ],
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "heroImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "publishDate",
+          "settings": {
+            "ampm": "24",
+            "format": "timeZ"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "4tj0ruGhDFrOwjGIRQELvj",
+        "type": "Entry",
+        "createdAt": "2019-09-24T02:13:27.167Z",
+        "updatedAt": "2019-09-25T02:44:54.513Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 127,
+        "publishedAt": "2019-09-25T02:44:54.513Z",
+        "firstPublishedAt": "2019-09-24T02:19:24.024Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 14,
+        "version": 128,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Home",
+          "fr-CA": "Accueil"
+        },
+        "slug": {
+          "en-CA": "/ca",
+          "fr-CA": "/fr-ca"
+        },
+        "heroImage": {
+          "en-CA": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "20eCCS3qJe3Ba72ajztmek"
+            }
+          },
+          "fr-CA": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "20eCCS3qJe3Ba72ajztmek"
+            }
+          }
+        },
+        "description": {
+          "en-CA": "This is your new home page",
+          "fr-CA": "Home page description"
+        },
+        "body": {
+          "en-CA": "Ceci est votre nouvelle page d'accueil\n\n## PRODUCTION ENVIRONMENT",
+          "fr-CA": "A propos de la description de la page\n\n## PRODUCTION ENVIRONMENT"
+        },
+        "publishDate": {
+          "en-CA": "2019-09-23T00:00-04:00"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "2gLUKZgaYo6A9LcgBu9CQi",
+        "type": "Entry",
+        "createdAt": "2019-09-24T14:51:44.203Z",
+        "updatedAt": "2019-09-24T15:00:53.928Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 51,
+        "publishedAt": "2019-09-24T15:00:53.928Z",
+        "firstPublishedAt": "2019-09-24T14:58:07.581Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 52,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Features",
+          "fr-CA": "Caractéristiques"
+        },
+        "slug": {
+          "en-CA": "/en-CA/features",
+          "fr-CA": "/fr-CA/caractéristiques"
+        },
+        "heroImage": {
+          "en-CA": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3ZwCN7OskvobRS7AGCs8tf"
+            }
+          },
+          "fr-CA": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3ZwCN7OskvobRS7AGCs8tf"
+            }
+          }
+        },
+        "description": {
+          "en-CA": "Features description",
+          "fr-CA": "Description des fonctionnalités"
+        },
+        "body": {
+          "en-CA": "# Features\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut. Quis auctor elit sed vulputate mi sit amet mauris. Ac turpis egestas integer eget aliquet. Donec massa sapien faucibus et molestie ac feugiat sed. Tellus rutrum tellus pellentesque eu tincidunt. Sollicitudin nibh sit amet commodo nulla. Orci a scelerisque purus semper eget. __Sed risus ultricies tristique nulla aliquet enim tortor at.__ Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Eget felis eget nunc lobortis mattis aliquam faucibus. In hac habitasse platea dictumst. Egestas quis ipsum suspendisse ultrices. *Nunc lobortis mattis aliquam faucibus. Ornare lectus sit amet est placerat in.*",
+          "fr-CA": "# Caractéristiques\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut. Quis auctor elit sed vulputate mi sit amet mauris. Ac turpis egestas integer eget aliquet. Donec massa sapien faucibus et molestie ac feugiat sed. Tellus rutrum tellus pellentesque eu tincidunt. Sollicitudin nibh sit amet commodo nulla. Orci a scelerisque purus semper eget. __Sed risus ultricies tristique nulla aliquet enim tortor at.__ Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Eget felis eget nunc lobortis mattis aliquam faucibus. In hac habitasse platea dictumst. Egestas quis ipsum suspendisse ultrices. *Nunc lobortis mattis aliquam faucibus. Ornare lectus sit amet est placerat in.*"
+        },
+        "publishDate": {
+          "en-CA": "2019-09-23T00:00-04:00"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "109f2py9yJzidybzxlo3d0",
+        "type": "Entry",
+        "createdAt": "2019-09-24T18:08:17.303Z",
+        "updatedAt": "2019-09-25T02:09:32.703Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 59,
+        "publishedAt": "2019-09-25T02:09:32.703Z",
+        "firstPublishedAt": "2019-09-24T18:11:46.660Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 60,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "page"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Pricing",
+          "fr-CA": "Prix"
+        },
+        "slug": {
+          "en-CA": "/en-CA/pricing",
+          "fr-CA": "/fr-CA/prix"
+        },
+        "heroImage": {
+          "en-CA": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3Jvc7AhZ2EMe7E4Pp1aoLi"
+            }
+          },
+          "fr-CA": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3Jvc7AhZ2EMe7E4Pp1aoLi"
+            }
+          }
+        },
+        "description": {
+          "en-CA": "Pricing description",
+          "fr-CA": "Description du prix"
+        },
+        "body": {
+          "en-CA": "# Pricing\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut. Quis auctor elit sed vulputate mi sit amet mauris. Ac turpis egestas integer eget aliquet. Donec massa sapien faucibus et molestie ac feugiat sed. Tellus rutrum tellus pellentesque eu tincidunt. Sollicitudin nibh sit amet commodo nulla. Orci a scelerisque purus semper eget. __Sed risus ultricies tristique nulla aliquet enim tortor at.__ Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Eget felis eget nunc lobortis mattis aliquam faucibus. In hac habitasse platea dictumst. Egestas quis ipsum suspendisse ultrices. *Nunc lobortis mattis aliquam faucibus. Ornare lectus sit amet est placerat in.*",
+          "fr-CA": "# Prix\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod lacinia at quis risus sed vulputate odio ut. Quis auctor elit sed vulputate mi sit amet mauris. Ac turpis egestas integer eget aliquet. Donec massa sapien faucibus et molestie ac feugiat sed. Tellus rutrum tellus pellentesque eu tincidunt. Sollicitudin nibh sit amet commodo nulla. Orci a scelerisque purus semper eget. __Sed risus ultricies tristique nulla aliquet enim tortor at.__ Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor. Suspendisse interdum consectetur libero id faucibus nisl tincidunt. Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Eget felis eget nunc lobortis mattis aliquam faucibus. In hac habitasse platea dictumst. Egestas quis ipsum suspendisse ultrices. *Nunc lobortis mattis aliquam faucibus. Ornare lectus sit amet est placerat in.*"
+        },
+        "publishDate": {
+          "en-CA": "2019-09-24T14:00-04:00"
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "4NzwDSDlGECGIiokKomsyI",
+        "type": "Asset",
+        "createdAt": "2019-09-23T17:38:47.678Z",
+        "updatedAt": "2019-09-24T03:38:38.430Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-09-24T03:38:38.430Z",
+        "firstPublishedAt": "2019-09-23T17:38:56.002Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "City",
+          "fr-CA": "Ville"
+        },
+        "description": {
+          "en-CA": "City pictured from the sky",
+          "fr-CA": "Ville vue du ciel"
+        },
+        "file": {
+          "en-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/4NzwDSDlGECGIiokKomsyI/5de655baf854c1254cb682f6618785eb/denys-nevozhai-100695.jpg",
+            "details": {
+              "size": 15736986,
+              "image": {
+                "width": 3992,
+                "height": 2992
+              }
+            },
+            "fileName": "denys-nevozhai-100695.jpg",
+            "contentType": "image/jpeg"
+          },
+          "fr-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/4NzwDSDlGECGIiokKomsyI/b7aaf141ce930f2acf6a65f63d04b908/denys-nevozhai-100695.jpg",
+            "details": {
+              "size": 15736986,
+              "image": {
+                "width": 3992,
+                "height": 2992
+              }
+            },
+            "fileName": "denys-nevozhai-100695.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "4shwYI3POEGkw0Eg6kcyaQ",
+        "type": "Asset",
+        "createdAt": "2019-09-23T17:38:47.681Z",
+        "updatedAt": "2019-09-24T03:36:56.699Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-09-24T03:36:56.699Z",
+        "firstPublishedAt": "2019-09-23T17:38:55.816Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Man in the fields",
+          "fr-CA": "Homme dans les champs"
+        },
+        "description": {
+          "en-CA": "Tattooed man walking in a field",
+          "fr-CA": "Homme tatoué marchant dans un champ"
+        },
+        "file": {
+          "en-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/4shwYI3POEGkw0Eg6kcyaQ/c20f0c99768e315caaa38c28c44ee119/felix-russell-saw-112140.jpg",
+            "details": {
+              "size": 4539181,
+              "image": {
+                "width": 2500,
+                "height": 1667
+              }
+            },
+            "fileName": "felix-russell-saw-112140.jpg",
+            "contentType": "image/jpeg"
+          },
+          "fr-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/4shwYI3POEGkw0Eg6kcyaQ/b228b76c20adc8ec995f5cdaab604d99/felix-russell-saw-112140.jpg",
+            "details": {
+              "size": 4539181,
+              "image": {
+                "width": 2500,
+                "height": 1667
+              }
+            },
+            "fileName": "felix-russell-saw-112140.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "7orLdboQQowIUs22KAW4U",
+        "type": "Asset",
+        "createdAt": "2019-09-23T17:38:47.700Z",
+        "updatedAt": "2019-09-23T17:38:55.558Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2019-09-23T17:38:55.558Z",
+        "firstPublishedAt": "2019-09-23T17:38:55.558Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Sparkler"
+        },
+        "description": {
+          "en-CA": "John with Sparkler"
+        },
+        "file": {
+          "en-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/7orLdboQQowIUs22KAW4U/4f97fcac2e901e808d9e034c945df690/matt-palmer-254999.jpg",
+            "details": {
+              "size": 2293094,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "matt-palmer-254999.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "6Od9v3wzLOysiMum0Wkmme",
+        "type": "Asset",
+        "createdAt": "2019-09-23T17:38:47.931Z",
+        "updatedAt": "2019-09-24T03:37:51.366Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2019-09-24T03:37:51.366Z",
+        "firstPublishedAt": "2019-09-23T17:38:56.212Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Woman with black hat",
+          "fr-CA": "Femme avec chapeau noir"
+        },
+        "description": {
+          "en-CA": "Woman wearing a black hat",
+          "fr-CA": "Femme, chapeau noir"
+        },
+        "file": {
+          "en-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/6Od9v3wzLOysiMum0Wkmme/e13e63356960e93ed0db2a9f7a7fd492/cameron-kirby-88711.jpg",
+            "details": {
+              "size": 7316629,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "cameron-kirby-88711.jpg",
+            "contentType": "image/jpeg"
+          },
+          "fr-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/6Od9v3wzLOysiMum0Wkmme/30a4cf074887149dfa80faf0e58f641d/cameron-kirby-88711.jpg",
+            "details": {
+              "size": 7316629,
+              "image": {
+                "width": 3000,
+                "height": 2000
+              }
+            },
+            "fileName": "cameron-kirby-88711.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "20eCCS3qJe3Ba72ajztmek",
+        "type": "Asset",
+        "createdAt": "2019-09-24T02:15:35.617Z",
+        "updatedAt": "2019-09-24T02:16:59.012Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2019-09-24T02:16:59.012Z",
+        "firstPublishedAt": "2019-09-24T02:16:59.012Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Man playing skateboard",
+          "fr-CA": "Homme jouant au skateboard"
+        },
+        "file": {
+          "en-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/20eCCS3qJe3Ba72ajztmek/11566e766c59c97a245476a1acf6cfc0/balance-blue-sky-daylight-2944537.jpg",
+            "details": {
+              "size": 299450,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "balance-blue-sky-daylight-2944537.jpg",
+            "contentType": "image/jpeg"
+          },
+          "fr-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/20eCCS3qJe3Ba72ajztmek/5099a8609bd0734d1b21973dedb20945/balance-blue-sky-daylight-2944537.jpg",
+            "details": {
+              "size": 299450,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "balance-blue-sky-daylight-2944537.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "3ZwCN7OskvobRS7AGCs8tf",
+        "type": "Asset",
+        "createdAt": "2019-09-24T14:53:44.122Z",
+        "updatedAt": "2019-09-24T14:55:15.203Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2019-09-24T14:55:15.203Z",
+        "firstPublishedAt": "2019-09-24T14:55:15.203Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Motor Bike Running Close-up Photography",
+          "fr-CA": "Moto en cours d'exécution photographie rapprochée"
+        },
+        "description": {
+          "en-CA": "Motor Bike Running Close-up Photography",
+          "fr-CA": "Moto en cours d'exécution photographie rapprochée"
+        },
+        "file": {
+          "en-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/3ZwCN7OskvobRS7AGCs8tf/2e8b64fe45700791424d9ea7b670735b/action-adventure-bike-2519374.jpg",
+            "details": {
+              "size": 582833,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "action-adventure-bike-2519374.jpg",
+            "contentType": "image/jpeg"
+          },
+          "fr-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/3ZwCN7OskvobRS7AGCs8tf/7c2e53491a5a8cdb78b0448f830f9856/action-adventure-bike-2519374.jpg",
+            "details": {
+              "size": 582833,
+              "image": {
+                "width": 1920,
+                "height": 1280
+              }
+            },
+            "fileName": "action-adventure-bike-2519374.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "id": "3Jvc7AhZ2EMe7E4Pp1aoLi",
+        "type": "Asset",
+        "createdAt": "2019-09-24T18:09:18.742Z",
+        "updatedAt": "2019-09-24T18:09:59.061Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2019-09-24T18:09:59.061Z",
+        "firstPublishedAt": "2019-09-24T18:09:59.061Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-CA": "Ocean Water Wave Photo",
+          "fr-CA": "Océan eau vague photo"
+        },
+        "description": {
+          "en-CA": "Ocean Water Wave Photo",
+          "fr-CA": "Océan eau vague photo"
+        },
+        "file": {
+          "en-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/3Jvc7AhZ2EMe7E4Pp1aoLi/0a834b97f64b82ef3418e178d1acdba1/barrel-blue-daytime-1295138.jpg",
+            "details": {
+              "size": 350345,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "barrel-blue-daytime-1295138.jpg",
+            "contentType": "image/jpeg"
+          },
+          "fr-CA": {
+            "url": "//images.ctfassets.net/qom3enaifvoq/3Jvc7AhZ2EMe7E4Pp1aoLi/b42e305762609771dc95ca98fa202332/barrel-blue-daytime-1295138.jpg",
+            "details": {
+              "size": 350345,
+              "image": {
+                "width": 1920,
+                "height": 1080
+              }
+            },
+            "fileName": "barrel-blue-daytime-1295138.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (Canada)",
+      "code": "en-CA",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "5FOx0xalUEphJlf0RxiWVe",
+        "version": 3,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "createdAt": "2019-09-23T17:37:24Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedAt": "2019-09-24T01:28:00Z"
+      }
+    },
+    {
+      "name": "French (Canada)",
+      "code": "fr-CA",
+      "fallbackCode": null,
+      "default": false,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": true,
+      "sys": {
+        "type": "Locale",
+        "id": "3aGHGfL6xufcMEA2SbY3oL",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "qom3enaifvoq"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "createdAt": "2019-09-24T01:27:33Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "1t9lCDlQ8sIEGPmbRfLd2V"
+          }
+        },
+        "updatedAt": "2019-09-24T01:27:33Z"
+      }
+    }
+  ],
+  "webhooks": [],
+  "roles": []
+}
