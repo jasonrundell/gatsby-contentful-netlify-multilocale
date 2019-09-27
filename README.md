@@ -12,6 +12,8 @@ This project is a modified clone of [contentful-userland/gatsby-contentful-start
   - `en-CA` and `fr-CA` pages
   - CI/CD pipeline and architecture using Netlify (a different CI platform can be bolted on)
   - A Content Management System (Contentful) with a `Production` and `Development` publishing environment
+- Here's the deployed Production site: 🔗[https://multilocale-prod.netlify.com/](https://multilocale-dev.netlify.com/)
+- Here's the deployed Development site: 🔗[https://multilocale-dev.netlify.com/](https://multilocale-dev.netlify.com/)
 
 ## 📢 Before you start
 
@@ -230,7 +232,7 @@ You will return later to add the Development site.
 
 We've set up our Production pipeline. In order to create our Development pipeline, we need to create a branch in our Git repo.
 
-**NOTE:** This branch/pipeline can be named many different things by many different teams. It's been known to be called "UAT", "Pre-prod", "Perf", "Preview", and "Staging". Call it what you want, it's purpose is to serve as a mirror of Production because you want to see changes _before_ it goes to Production.
+**❗️NOTE:** This branch/pipeline can be named many different things by many different teams. It's been known to be called "UAT", "Pre-prod", "Perf", "Preview", and "Staging". Call it what you want, it's purpose is to serve as a mirror of Production because you want to see changes _before_ they go to Production.
 
 Use your preferred method of creating a branch off of your `master`, but here is an example command line:
 
@@ -240,6 +242,8 @@ git branch develop
 git checkout develop
 git push origin develop
 ```
+
+**💡TIP:** It's good to add branch protection to `develop` so that it can't be deleted accidentally.
 
 ### Netlify setup for DEVELOPMENT
 
@@ -268,7 +272,7 @@ Follow the same instructions from **Netlify app setup in Contentful for PRODUCTI
 
 - Set **Display name** to something appropriate for publishers to recognise as the Development site, e.g. `Development`. This name can be changed at any point later.
 
-## Congrats!
+## 🎉 Congrats!
 
 Your Production and Development pipelines are now finished and you can begin customizing to your heart's delight! 💖
 
@@ -282,7 +286,7 @@ yarn start
 
 ## Credits
 
-- Credit to [rxaviers](https://gist.github.com/rxaviers/7360908]) for the gist of emojis.
+- Credit to [rxaviers](https://gist.github.com/rxaviers/7360908) for the gist of emojis.
 - Stefan Judis and all the contributors for the [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter) repo.
 - [Contentful](https://www.contentful.com/) and [Netlify](https://www.netlify.com/) for empowering developers with their free tiers!
 - [Gatsby](https://www.gatsbyjs.org/) for a fantastic framework that 'helps developers build blazing fast websites and apps'.
