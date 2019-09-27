@@ -232,7 +232,7 @@ You will return later to add the Development site.
 
 We've set up our Production pipeline. In order to create our Development pipeline, we need to create a branch in our Git repo.
 
-**NOTE:** This branch/pipeline can be named many different things by many different teams. It's been known to be called "UAT", "Pre-prod", "Perf", "Preview", and "Staging". Call it what you want, it's purpose is to serve as a mirror of Production because you want to see changes _before_ it goes to Production.
+**❗️NOTE:** This branch/pipeline can be named many different things by many different teams. It's been known to be called "UAT", "Pre-prod", "Perf", "Preview", and "Staging". Call it what you want, it's purpose is to serve as a mirror of Production because you want to see changes _before_ they go to Production.
 
 Use your preferred method of creating a branch off of your `master`, but here is an example command line:
 
@@ -242,6 +242,8 @@ git branch develop
 git checkout develop
 git push origin develop
 ```
+
+**💡TIP:** It's good to add branch protection to `develop` so that it can't be deleted accidentally.
 
 ### Netlify setup for DEVELOPMENT
 
@@ -270,7 +272,7 @@ Follow the same instructions from **Netlify app setup in Contentful for PRODUCTI
 
 - Set **Display name** to something appropriate for publishers to recognise as the Development site, e.g. `Development`. This name can be changed at any point later.
 
-## Congrats!
+## 🎉 Congrats!
 
 Your Production and Development pipelines are now finished and you can begin customizing to your heart's delight! 💖
 
