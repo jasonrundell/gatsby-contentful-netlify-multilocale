@@ -291,3 +291,4 @@ yarn start
 - [Contentful](https://www.contentful.com/) and [Netlify](https://www.netlify.com/) for empowering developers with their free tiers!
 - [Gatsby](https://www.gatsbyjs.org/) for a fantastic framework that 'helps developers build blazing fast websites and apps'.
 - [tailwindcss](https://tailwindcss.com)
+- [Jason Lengstorf's gatsby-theme-jason-blog](https://github.com/jlengstorf/gatsby-theme-jason-blog)
