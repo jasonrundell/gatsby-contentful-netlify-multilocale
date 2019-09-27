@@ -1,7 +1,5 @@
-import React from "react"
-import Img from "gatsby-image"
-
-import styles from "./hero.module.css"
+import React from 'react'
+import Img from 'gatsby-image'
 
 export default ({ image, imageAltText }) => (
   <div>

@@ -1,21 +1,38 @@
-import React from "react"
+/* eslint-disable react/no-danger */
+import React from 'react'
+import Helmet from 'react-helmet'
+import Header from './Header'
+import Main from './Main'
+import Footer from './Footer'
+import GlobalStyles from './GlobalStyles'
 
-import Container from "./container"
-import Navigation from "./navigation"
+export default ({ children, title, className = '' }) => [
+  <Helmet
+    key="app-head"
+    titleTemplate="%s · Gatsby, Contentful, Netlify Demo"
+    defaultTitle="Gatsby, Contentful, Netlify Demo"
+  >
+    <html lang="en" />
 
-export default props => {
-  const { location, children } = props
-  let header
+    <meta charSet="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>{title}</title>
 
-  let rootPath = `/`
-  if (typeof __PREFIX_PATHS__ !== `undefined` && __PREFIX_PATHS__) {
-    rootPath = __PATH_PREFIX__ + `/`
-  }
-
-  return (
-    <Container>
-      <Navigation />
-      {children}
-    </Container>
-  )
-}
+    <meta
+      name="apple-mobile-web-app-title"
+      content="Gatsby, Contentful, Netlify Demo"
+    />
+    <meta name="application-name" content="Gatsby, Contentful, Netlify Demo" />
+    <meta name="theme-color" content="#222222" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#222222" />
+  </Helmet>,
+  <GlobalStyles key="global-styles" />,
+  <Header key="app-header" />,
+  <Main key="app-main" className={className}>
+    {children}
+  </Main>,
+  <Footer key="app-footer" />,
+]

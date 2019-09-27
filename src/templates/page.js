@@ -1,9 +1,11 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Helmet from "react-helmet"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
-import Layout from "../components/layout"
-import Hero from "../components/hero"
+import Layout from '../components/Layout'
+import Main from '../components/Main'
+import Hero from '../components/Hero'
+import Container from '../components/Container'
 
 export default props => {
   const { data } = props
@@ -14,10 +16,10 @@ export default props => {
   return (
     <Layout>
       <Helmet title={`${page.title} | ${siteMetadata.title}`} />
-      <div>
+      <Container>
         <Hero image={page.heroImage} imageAltText={page.name} />
-      </div>
-      <main>
+      </Container>
+      <Main>
         <h1>{page.title}</h1>
         <section>
           <div
@@ -26,7 +28,7 @@ export default props => {
             }}
           />
         </section>
-      </main>
+      </Main>
     </Layout>
   )
 }

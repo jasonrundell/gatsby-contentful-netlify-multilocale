@@ -1,7 +1,5 @@
-import React from "react"
-import { StaticQuery, Link, graphql } from "gatsby"
-
-import styles from "./navigation.module.css"
+import React from 'react'
+import { StaticQuery, Link, graphql } from 'gatsby'
 
 export default () => (
   <StaticQuery
