@@ -290,3 +290,4 @@ yarn start
 - Stefan Judis and all the contributors for the [gatsby-contentful-starter](https://github.com/contentful-userland/gatsby-contentful-starter) repo.
 - [Contentful](https://www.contentful.com/) and [Netlify](https://www.netlify.com/) for empowering developers with their free tiers!
 - [Gatsby](https://www.gatsbyjs.org/) for a fantastic framework that 'helps developers build blazing fast websites and apps'.
+- [tailwindcss](https://tailwindcss.com)

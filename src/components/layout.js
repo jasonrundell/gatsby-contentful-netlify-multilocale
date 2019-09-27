@@ -3,8 +3,6 @@ import React from "react"
 import Container from "./container"
 import Navigation from "./navigation"
 
-import "./base.css"
-
 export default props => {
   const { location, children } = props
   let header

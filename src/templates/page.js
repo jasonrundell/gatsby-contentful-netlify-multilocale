@@ -1,10 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import Img from "gatsby-image"
-import Layout from "../components/layout"
 
-import heroStyles from "../components/hero.module.css"
+import Layout from "../components/layout"
+import Hero from "../components/hero"
 
 export default props => {
   const { data } = props
@@ -14,31 +13,20 @@ export default props => {
 
   return (
     <Layout>
-      <div style={{ background: "#fff" }}>
-        <Helmet title={`${page.title} | ${siteMetadata.title}`} />
-        <div className={heroStyles.hero}>
-          <Img
-            className={heroStyles.heroImage}
-            alt={page.title}
-            fluid={page.heroImage.fluid}
-          />
-        </div>
-        <div className="wrapper">
-          <h1 className="section-headline">{page.title}</h1>
-          <p
-            style={{
-              display: "block",
-            }}
-          >
-            {page.publishDate}
-          </p>
+      <Helmet title={`${page.title} | ${siteMetadata.title}`} />
+      <div>
+        <Hero image={page.heroImage} imageAltText={page.name} />
+      </div>
+      <main>
+        <h1>{page.title}</h1>
+        <section>
           <div
             dangerouslySetInnerHTML={{
               __html: page.body.childMarkdownRemark.html,
             }}
           />
-        </div>
-      </div>
+        </section>
+      </main>
     </Layout>
   )
 }
