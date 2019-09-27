@@ -12,6 +12,8 @@ This project is a modified clone of [contentful-userland/gatsby-contentful-start
   - `en-CA` and `fr-CA` pages
   - CI/CD pipeline and architecture using Netlify (a different CI platform can be bolted on)
   - A Content Management System (Contentful) with a `Production` and `Development` publishing environment
+- Here's the deployed Production site: 🔗[https://multilocale-prod.netlify.com/](https://multilocale-dev.netlify.com/)
+- Here's the deployed Development site: 🔗[https://multilocale-dev.netlify.com/](https://multilocale-dev.netlify.com/)
 
 ## 📢 Before you start
 
