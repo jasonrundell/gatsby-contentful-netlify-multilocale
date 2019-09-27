@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "gatsby-image": "^2.0.38",
+    "gatsby-plugin-postcss": "^2.1.10",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.34",
     "gatsby-source-contentful": "^2.0.48",
@@ -31,6 +32,7 @@
     "inquirer": "^6.2.2",
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3",
+    "tailwindcss": "^1.1.2",
     "yargs-parser": "^13.0.0"
   },
   "homepage": "https://github.com/jasonrundell/gatsby-contentful-netlify-multilocale#readme",
@@ -41,7 +43,8 @@
     "multi-locale",
     "multilang",
     "multilanguage",
-    "jamstack"
+    "jamstack",
+    "tailwind"
   ],
   "license": "MIT",
   "main": "n/a",
