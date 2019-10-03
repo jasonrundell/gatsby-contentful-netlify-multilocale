@@ -36,7 +36,8 @@
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3",
     "tailwindcss": "^1.1.2",
-    "yargs-parser": "^13.0.0"
+    "yargs-parser": "^13.0.0",
+    "contentful-export": "^7.7.0"
   },
   "homepage": "https://github.com/jasonrundell/gatsby-contentful-netlify-multilocale#readme",
   "keywords": [
@@ -61,14 +62,13 @@
     "clean": "gatsby clean",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --write \"src/**/*.js\" \"src/**/*.md\" \"bin/*.js\"",
+    "format": "prettier --write \"src/**/*.js\" \"src/**/*.jsx\" \"src/**/*.md\" \"src/**/*.scss\" \"bin/*.js\"",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix *.js bin/*.js",
     "postinstall": "node ./bin/hello.js",
     "setup": "node ./bin/setup.js",
     "start": "npm run develop",
-    "heroku-postbuild": "gatsby build",
-    "cleanup-repository": "rimraf bin contentful && yarn remove contentful-import chalk inquirer rimraf "
+    "content-export": "node ./contentful/export.js"
   }
 }
