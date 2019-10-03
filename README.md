@@ -14,6 +14,7 @@ This project is a modified clone of [contentful-userland/gatsby-contentful-start
   - A Content Management System (Contentful) with a `Production` and `Development` publishing environment
 - Here's the deployed Production site: 🔗[https://multilocale-prod.netlify.com/](https://multilocale-dev.netlify.com/)
 - Here's the deployed Development site: 🔗[https://multilocale-dev.netlify.com/](https://multilocale-dev.netlify.com/)
+- Export your Contentful content (JSON dump)
 
 ## 📢 Before you start
 
@@ -283,6 +284,32 @@ You can run the following to view you site and begin publishing:
 ```bash
 yarn start
 ```
+
+## 💻 Commands
+
+### yarn setup
+
+```bash
+yarn setup
+```
+
+Use this to setup your Contentful space for the first time or, remove all of your Contentful content, models and modify the export.json dump file to your liking, and re-run `yarn setup` again.
+
+### yarn start
+
+```bash
+yarn start
+```
+
+Starts your local Gatsby site at [http://localhost:8000/](http://localhost:8000/)
+
+### yarn content-export
+
+```bash
+yarn content-export
+```
+
+Generate a JSON dump file of all of your content and models from Contentful.
 
 ## Credits
 
