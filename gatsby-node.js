@@ -1,11 +1,11 @@
-const Promise = require("bluebird")
-const path = require("path")
+const Promise = require('bluebird')
+const path = require('path')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage, createRedirect } = actions
 
   return new Promise((resolve, reject) => {
-    const pageTemplate = path.resolve("./src/templates/page.js")
+    const pageTemplate = path.resolve('./src/templates/page.js')
     resolve(
       graphql(
         `
@@ -40,12 +40,21 @@ exports.createPages = ({ graphql, actions }) => {
         // Redirects
 
         createRedirect({
-          fromPath: "/",
-          toPath: "/en-CA/",
+          fromPath: '/',
+          toPath: '/en-CA/',
           isPermanent: true,
           redirectInBrowser: true,
         })
       })
     )
+  })
+}
+exports.onCreateBabelConfig = ({ actions: { setBabelPlugin } }) => {
+  setBabelPlugin({
+    name: 'babel-plugin-tailwind-components',
+    options: {
+      config: './tailwind.config.js',
+      format: 'auto',
+    },
   })
 }

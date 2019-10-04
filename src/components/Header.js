@@ -1,8 +1,13 @@
+/* global tw */
 import React from 'react'
-import styled from '@emotion/styled'
+import styled from 'react-emotion'
 import { Link } from 'gatsby'
 import logo from '../images/logo.svg'
 import { animation, colors, fonts, media } from '../tokens'
+
+// const Header = styled('div')`
+//   ${tw`bg-white container my-8 mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden font-sans`};
+// `
 
 const Header = styled('header')`
   background-color: ${colors.lightest};
@@ -11,7 +16,6 @@ const Header = styled('header')`
   right: 0;
   top: 0;
   z-index: 1000;
-
   ::before,
   ::after {
     content: '';
@@ -22,12 +26,10 @@ const Header = styled('header')`
     width: calc(100% - 30px);
     z-index: 1;
   }
-
   ::before {
     top: calc(100% - 1px);
     background-color: ${colors.primary};
   }
-
   ::after {
     top: 100%;
     background-color: ${colors.grayAlpha};
