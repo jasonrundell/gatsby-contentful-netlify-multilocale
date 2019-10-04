@@ -5,36 +5,36 @@ import { Link } from 'gatsby'
 import logo from '../images/logo.svg'
 import { animation, colors, fonts, media } from '../tokens'
 
-// const Header = styled('div')`
-//   ${tw`bg-white container my-8 mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden font-sans`};
-// `
-
 const Header = styled('header')`
-  background-color: ${colors.lightest};
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  z-index: 1000;
-  ::before,
-  ::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    height: 1px;
-    width: calc(100% - 30px);
-    z-index: 1;
-  }
-  ::before {
-    top: calc(100% - 1px);
-    background-color: ${colors.primary};
-  }
-  ::after {
-    top: 100%;
-    background-color: ${colors.grayAlpha};
-  }
+  ${tw`bg-white container my-8 mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden font-sans`};
 `
+
+// const Header = styled('header')`
+//   background-color: ${colors.lightest};
+//   left: 0;
+//   position: fixed;
+//   right: 0;
+//   top: 0;
+//   z-index: 1000;
+//   ::before,
+//   ::after {
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     right: 0;
+//     height: 1px;
+//     width: calc(100% - 30px);
+//     z-index: 1;
+//   }
+//   ::before {
+//     top: calc(100% - 1px);
+//     background-color: ${colors.primary};
+//   }
+//   ::after {
+//     top: 100%;
+//     background-color: ${colors.grayAlpha};
+//   }
+// `
 
 const SkipToContent = styled('a')`
   transition: none;
