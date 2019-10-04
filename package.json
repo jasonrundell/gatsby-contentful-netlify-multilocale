@@ -26,6 +26,7 @@
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "chalk": "^2.4.2",
+    "contentful-export": "^7.7.0",
     "contentful-import": "^7.4.3",
     "dotenv": "^8.0.0",
     "eslint": "^5.16.0",
@@ -35,9 +36,7 @@
     "inquirer": "^6.2.2",
     "prettier": "^1.17.0",
     "rimraf": "^2.6.3",
-    "tailwindcss": "^1.1.2",
-    "yargs-parser": "^13.0.0",
-    "contentful-export": "^7.7.0"
+    "yargs-parser": "^13.0.0"
   },
   "homepage": "https://github.com/jasonrundell/gatsby-contentful-netlify-multilocale#readme",
   "keywords": [
@@ -47,8 +46,7 @@
     "multi-locale",
     "multilang",
     "multilanguage",
-    "jamstack",
-    "tailwind"
+    "jamstack"
   ],
   "license": "MIT",
   "main": "n/a",
