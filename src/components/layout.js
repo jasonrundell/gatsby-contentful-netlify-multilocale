@@ -6,12 +6,8 @@ import Main from './Main'
 import Footer from './Footer'
 import GlobalStyles from './GlobalStyles'
 
-export default ({ children, title, className = '' }) => [
-  <Helmet
-    key="app-head"
-    titleTemplate="%s · Gatsby, Contentful, Netlify Demo"
-    defaultTitle="Gatsby, Contentful, Netlify Demo"
-  >
+export default ({ children, title }) => [
+  <Helmet key="app-head" titleTemplate="%s">
     <html lang="en" />
 
     <meta charSet="utf-8" />
@@ -31,8 +27,6 @@ export default ({ children, title, className = '' }) => [
   </Helmet>,
   <GlobalStyles key="global-styles" />,
   <Header key="app-header" />,
-  <Main key="app-main" className={className}>
-    {children}
-  </Main>,
+  <Main key="app-main">{children}</Main>,
   <Footer key="app-footer" />,
 ]

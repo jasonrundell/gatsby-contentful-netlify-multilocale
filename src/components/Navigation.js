@@ -1,5 +1,10 @@
 import React from 'react'
 import { StaticQuery, Link, graphql } from 'gatsby'
+import styled from '@emotion/styled'
+
+const Container = styled('nav')`
+  ${tw`container`};
+`
 
 export default () => (
   <StaticQuery
@@ -17,7 +22,7 @@ export default () => (
       }
     `}
     render={data => (
-      <nav role="navigation">
+      <Container role="navigation">
         <ul>
           {data.allContentfulPage.edges.map(({ node }) => (
             <li key={node.slug}>
@@ -25,7 +30,7 @@ export default () => (
             </li>
           ))}
         </ul>
-      </nav>
+      </Container>
     )}
   />
 )

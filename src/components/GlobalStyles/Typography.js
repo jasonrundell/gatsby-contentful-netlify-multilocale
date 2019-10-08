@@ -9,12 +9,12 @@ export default () => (
       body {
         color: ${colors.text};
         font-family: ${fonts.default};
-        font-size: ${fonts.sizeSm};
+        font-size: ${fonts.size};
         line-height: 1.45;
         text-decoration-skip: ink;
 
         @media ${media.medium} {
-          font-size: ${fonts.sizeMd};
+          font-size: ${fonts.size};
         }
       }
 
@@ -31,10 +31,6 @@ export default () => (
         margin-top: 1.5rem;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-
-        &:first-child {
-          margin-top: 0;
-        }
 
         & + p {
           margin-top: 0.5rem;
@@ -78,31 +74,6 @@ export default () => (
 
       li {
         margin-top: 0.5rem;
-      }
-
-      strong {
-        color: ${colors.textDark};
-      }
-
-      a strong {
-        color: inherit;
-      }
-
-      a {
-        background-color: transparent;
-        color: ${colors.primaryDark};
-        padding: 0 0.125rem;
-        transition: all ${animation.transitionTime} linear;
-
-        &:focus,
-        &:active,
-        &:hover {
-          background-color: ${colors.primary};
-          border-radius: 0.25rem;
-          color: ${colors.lightest};
-          outline: 0;
-          text-decoration: none;
-        }
       }
 
       /* Footnotes are auto-generated, so a little bit of nonsense is required. */

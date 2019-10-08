@@ -2,16 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
 
-const main = styled('main')`
-  margin: 5rem auto 6rem;
-  max-width: 57ch;
+const Container = styled('main')`
+  ${tw`container`};
 `
 
-const Main = ({ children, className }) => (
-  <main id="content" className={className}>
-    {children}
-  </main>
-)
+const Main = ({ children }) => <Container id="content">{children}</Container>
 
 Main.propTypes = {
   children: PropTypes.node.isRequired,

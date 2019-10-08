@@ -1,30 +1,12 @@
-const defaultFontStack = [
-  '-apple-system',
-  'BlinkMacSystemFont',
-  'Segoe UI',
-  'Roboto',
-  'Helvetica',
-  'Arial',
-  'sans-serif',
-  'Apple Color Emoji',
-  'Segoe UI Emoji',
-  'Segoe UI Symbol',
-]
+const defaultFontStack = 'Helvetica, Arial, sans-serif'
 
-const monoFontStack = [
-  // 'Operator Mono', // I know this only works on, like, my computer.
-  'SFMono-Regular',
-  'Consolas',
-  'Liberation Mono',
-  'Menlo',
-  'Courier',
-  'monospace',
-]
+const monoFontStack = 'monospace'
+
+const headingFontStack = 'Times, serif'
 
 export default {
-  sizeSm: '16px',
-  sizeMd: '18px',
-  default: defaultFontStack.join(', '),
-  heading: ['mallory', ...defaultFontStack].join(', '),
-  mono: monoFontStack.join(', '),
+  size: '16px',
+  default: defaultFontStack,
+  heading: headingFontStack,
+  mono: monoFontStack,
 }

@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 import Main from '../components/Main'
 import Hero from '../components/Hero'
-import Container from '../components/Container'
 
 export default props => {
   const { data } = props
@@ -14,21 +13,17 @@ export default props => {
   const { siteMetadata } = site
 
   return (
-    <Layout>
-      <Helmet title={`${page.title} | ${siteMetadata.title}`} />
-      <Container>
-        <Hero image={page.heroImage} imageAltText={page.name} />
-      </Container>
-      <Main>
-        <h1>{page.title}</h1>
-        <section>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: page.body.childMarkdownRemark.html,
-            }}
-          />
-        </section>
-      </Main>
+    <Layout title={`${page.title} | ${siteMetadata.title}`}>
+      {/* <Helmet title= /> */}
+      <Hero image={page.heroImage} imageAltText={page.name} />
+      <h1>{page.title}</h1>
+      <section>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: page.body.childMarkdownRemark.html,
+          }}
+        />
+      </section>
     </Layout>
   )
 }
