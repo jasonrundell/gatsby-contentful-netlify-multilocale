@@ -29,5 +29,3 @@ export const colors = { ...colorDefaults, ...(theme.colors || {}) }
 export const fonts = { ...fontDefaults, ...(theme.fonts || {}) }
 export const media = { ...mediaDefaults, ...(theme.media || {}) }
 export default { animation, colors, fonts, media }
-
-console.log(colors)

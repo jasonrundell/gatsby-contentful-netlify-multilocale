@@ -9,8 +9,7 @@
   "dependencies": {
     "@emotion/core": "^10.0.6",
     "@emotion/styled": "^10.0.6",
-    "babel-plugin-tailwind-components": "^0.5.4",
-		"emotion": "^9.2.6",
+    "emotion": "^9.2.6",
     "emotion-server": "^9.2.6",
     "gatsby": "next",
     "gatsby-image": "^2.0.38",
@@ -39,7 +38,6 @@
     "inquirer": "^6.2.2",
     "prettier": "^1.17.0",
     "react-emotion": "^9.2.6",
-    "tailwindcss": "^0.6.5",
     "yargs-parser": "^13.0.0"
   },
   "homepage": "https://github.com/jasonrundell/gatsby-contentful-netlify-multilocale#readme",
@@ -50,8 +48,7 @@
     "multi-locale",
     "multilang",
     "multilanguage",
-    "jamstack",
-    "tailwind"
+    "jamstack"
   ],
   "license": "MIT",
   "main": "n/a",

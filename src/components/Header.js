@@ -7,9 +7,7 @@ import Navigation from './Navigation'
 import logo from '../images/logo.svg'
 import { animation, colors, fonts, media } from '../tokens'
 
-const Header = styled('header')`
-  ${tw`container`};
-`
+const Header = styled('header')``
 
 const SkipToContent = styled('a')`
   transition: none;

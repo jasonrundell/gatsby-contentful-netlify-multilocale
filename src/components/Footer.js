@@ -3,9 +3,7 @@ import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { colors, media } from '../tokens'
 
-const Footer = styled('footer')`
-  ${tw`container`};
-`
+const Footer = styled('footer')``
 
 const Copyright = styled('span')``
 

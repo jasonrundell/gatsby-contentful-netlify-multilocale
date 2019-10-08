@@ -2,9 +2,7 @@ import React from 'react'
 import { StaticQuery, Link, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 
-const Container = styled('nav')`
-  ${tw`container`};
-`
+const Container = styled('nav')``
 
 export default () => (
   <StaticQuery

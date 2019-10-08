@@ -2,9 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from '@emotion/styled'
 
-const Container = styled('main')`
-  ${tw`container`};
-`
+const Container = styled('main')``
 
 const Main = ({ children }) => <Container id="content">{children}</Container>
 
