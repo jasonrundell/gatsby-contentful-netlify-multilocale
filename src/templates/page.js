@@ -1,9 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
 
 import Layout from '../components/Layout'
-import Main from '../components/Main'
 import Hero from '../components/Hero'
 
 export default props => {
@@ -14,7 +12,6 @@ export default props => {
 
   return (
     <Layout title={`${page.title} | ${siteMetadata.title}`}>
-      {/* <Helmet title= /> */}
       <Hero image={page.heroImage} imageAltText={page.name} />
       <h1>{page.title}</h1>
       <section>

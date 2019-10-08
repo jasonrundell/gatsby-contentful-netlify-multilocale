@@ -17,4 +17,18 @@
  *
  * For a full list of tokens, see the `src/tokens/` directory in this theme.
  */
+
+const darkTheme = {
+  colors: {
+    white: '#000000',
+    light: '#1c304a',
+    bright: '#b3efff',
+    medium: '#046b99',
+    dark: '#00cfff',
+    black: '#ffffff',
+    error: '#00CFFF',
+  },
+}
+
+// export default darkTheme
 export default {}

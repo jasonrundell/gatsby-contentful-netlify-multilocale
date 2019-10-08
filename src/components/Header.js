@@ -20,10 +20,10 @@ const SkipToContent = styled('a')`
     clip: auto;
     width: auto;
     height: auto;
-    background-color: ${colors.lightest};
-    border: 2px solid ${colors.darkest};
+    background-color: ${colors.black};
+    border: 2px solid ${colors.black};
     border-radius: 0;
-    color: ${colors.darkest};
+    color: ${colors.black};
     padding: 0.5rem 1rem;
     z-index: 5000;
   }
