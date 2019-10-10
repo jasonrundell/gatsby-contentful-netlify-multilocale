@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import Layout from 'components/Layout'
-import Hero from 'components/Hero'
+import Layout from '../components/Layout'
+import Hero from '../components/Hero'
 
 export default props => {
   const { data } = props
