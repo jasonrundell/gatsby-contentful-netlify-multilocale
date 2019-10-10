@@ -1,6 +1,6 @@
 /* global tw */
 import React from 'react'
-import styled from 'react-emotion'
+import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 
 import Navigation from './Navigation'
@@ -44,7 +44,7 @@ const topLevelNav = [
   },
 ]
 
-export default () => (
+export default ({ children }) => (
   <Header role="banner">
     <SkipToContent
       href="#content"
@@ -54,5 +54,6 @@ export default () => (
       Skip to Content
     </SkipToContent>
     <Navigation />
+    {children}
   </Header>
 )

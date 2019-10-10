@@ -11,10 +11,18 @@ export default props => {
   const { siteMetadata } = site
 
   return (
-    <Layout title={`${page.title} | ${siteMetadata.title}`}>
+    <Layout>
       <Hero image={page.heroImage} imageAltText={page.name} />
       <h1>{page.title}</h1>
-      <section>
+      <section
+        sx={{
+          // this uses the value from `theme.space[4]`
+          padding: 4,
+          // these use values from `theme.colors`
+          color: 'background',
+          backgroundColor: 'primary',
+        }}
+      >
         <div
           dangerouslySetInnerHTML={{
             __html: page.body.childMarkdownRemark.html,

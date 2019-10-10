@@ -7,13 +7,11 @@
     "url": "https://github.com/jasonrundell/gatsby-contentful-netlify-multilocale/issues"
   },
   "dependencies": {
-    "@emotion/core": "^10.0.6",
-    "@emotion/styled": "^10.0.6",
-    "emotion": "^9.2.6",
-    "emotion-server": "^9.2.6",
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
+    "@mdx-js/react": "^1.5.1",
     "gatsby": "next",
     "gatsby-image": "^2.0.38",
-    "gatsby-plugin-emotion": "^4.1.9",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.0.34",
     "gatsby-source-contentful": "^2.0.48",
@@ -24,7 +22,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
-    "sharp": "^0.22.0"
+    "sharp": "^0.22.0",
+    "theme-ui": "^0.2.44"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
@@ -37,7 +36,6 @@
     "gh-pages": "^2.0.1",
     "inquirer": "^6.2.2",
     "prettier": "^1.17.0",
-    "react-emotion": "^9.2.6",
     "yargs-parser": "^13.0.0"
   },
   "homepage": "https://github.com/jasonrundell/gatsby-contentful-netlify-multilocale#readme",
