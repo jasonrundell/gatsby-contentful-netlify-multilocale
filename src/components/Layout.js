@@ -58,6 +58,7 @@ export default ({ children, title }) => {
         }}
       />
       <Header key="app-header">
+        <div>Switch theme:</div>
         <button title="Toggle Dark Mode" onClick={toggleMode}>
           {mode}
         </button>
